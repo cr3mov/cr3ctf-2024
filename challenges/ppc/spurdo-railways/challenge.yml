@@ -1,0 +1,17 @@
+name: "spurdo-railways"
+author: "ATSTNG, es3n1n, cpp.dog"
+category: ppc
+description: |-
+  Check it out on our [platform](https://ppc.1337.sb/)
+  
+  **author**: ATSTNG, es3n1n, cpp.dog
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 50
+  minimum: 50
+flags:
+  - cr3{0n3_w4y_tr1p_t0_th3_l4va_p0o1}
+state: visible
+version: "0.1"

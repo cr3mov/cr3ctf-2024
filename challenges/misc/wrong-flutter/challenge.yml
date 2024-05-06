@@ -1,0 +1,19 @@
+name: "wrong-flutter"
+author: "cpp.dog"
+category: misc
+description: |-
+  I think i've downloaded a wrong version of flutter. Can you take a look?
+
+  **author**: cpp.dog
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 50
+  minimum: 50
+flags:
+  - cr3{1_h0p3_y0u_s0lv3d_1t_th3_w4y_1_w4nt3d_t0o}
+files:
+  - handout/misc_wrong-flutter.7z
+state: visible
+version: "0.1"

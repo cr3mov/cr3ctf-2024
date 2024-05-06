@@ -1,0 +1,23 @@
+name: "shippering"
+author: "es3n1n"
+category: web
+description: |-
+  Felt very lonely and decided to make a challenge out of it.
+
+  [https://shippering.1337.sb](https://shippering.1337.sb)
+
+  flag is at `/flag`
+  
+  **author**: es3n1n
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 50
+  minimum: 50
+flags:
+  - cr3{n0w_yoU_H4v3_a_m4tcH_yayyyyyyyyyyyyyyyyyyyyyyyy}
+files:  # (ones that would be given to players)
+  - handout/web_shippering.7z
+state: visible
+version: "0.1"

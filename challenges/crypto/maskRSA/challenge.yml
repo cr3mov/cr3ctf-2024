@@ -1,0 +1,19 @@
+name: "maskRSA"
+author: "Onirique"
+category: crypto
+description: |-
+  Can you solve this easy RSA challenge?
+
+  **author**: Onirique
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 50
+  minimum: 50
+flags:
+  - cr3{m4skR5a_1s_e4sy_r1ght??}
+files:
+  - handout/crypto_maskRSA.7z
+state: visible
+version: "0.1"

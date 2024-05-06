@@ -1,0 +1,25 @@
+name: "cr3dao-revenge"
+author: "CarpeDiem"
+category: misc
+description: |-
+  Super Secure Cr3 Dao where a rich owner can do anything they want with votes.
+  Can you steal all of the Cr3 Tokens?
+
+  Hopefully it's fixed : ) 
+  
+  `$ nc 1337.sb 10002`
+
+   **author**: CarpeDiem
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 50
+  minimum: 50
+flags:
+  - "cr3{m4Pp1ng_c4LlD4ta_tok3n_da0_d1rty_F1x3d_H0p3FuLlY}"
+files:
+  - handout/block_cr3daoRevenge.7z
+state: visible
+version: "0.1"
+

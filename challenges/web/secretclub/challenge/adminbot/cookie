@@ -1,0 +1,9 @@
+{
+    "name": "flag",
+    "value": "FLAG_VALUE",
+    "domain": "DOMAIN_VALUE",
+    "url": "PROTO://DOMAIN_VALUE",
+    "path": "/",
+    "httpOnly": false,
+    "secure": true
+}

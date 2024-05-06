@@ -1,0 +1,21 @@
+name: "dummy-aes"
+author: "Onirique"
+category: crypto
+description: |-
+  Cocay just sent me his new AES, please help me break it so i can 'haha, skill issue' him xD.
+
+  `$ nc 1337.sb 20003`
+
+  **Author**: Onirique
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 50
+  minimum: 50
+flags:
+  - cr3{T1L_r0und5_k3ys_c4n_b3_r3v3rs3d_OwO}
+files:  # (ones that would be given to players)
+  - handout/crypto_dummy-aes.7z
+state: visible
+version: "0.1"

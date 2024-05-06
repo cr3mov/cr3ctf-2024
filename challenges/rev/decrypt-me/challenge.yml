@@ -1,0 +1,19 @@
+name: "decrypt-me"
+author: "es3n1n"
+category: rev
+description: |-
+  that's it
+  
+  **author**: es3n1n
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 50
+  minimum: 50
+flags:
+  - cr3{al0ha_aaa_1m_5o_3xhau5t3d_1t5_unb3l13v4bl3_bbe7d1a1483b898d3b3f6aa6504330a9}
+files:
+  - handout/rev_decrypt-me.7z
+state: visible
+version: "0.1"

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{{.comment.Title}} - PP Ranking</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom styles -->
+    <style>
+        body {
+            padding-top: 56px;
+            min-height: 100vh;
+            background-color: #343a40; /* Dark background color */
+            color: #ffffff; /* Light text color */
+        }
+
+        @media (min-width: 992px) {
+            body {
+                padding-top: 72px;
+            }
+        }
+
+        nav, .footer-text {
+            color: #ffffff; /* Light text color for navbar and footer */
+        }
+
+        /* Dark background color for the navbar */
+        nav.navbar {
+            background-color: #212529;
+        }
+
+        /* Dark background color for the header */
+        header {
+            background-color: #343a40;
+        }
+
+        /* Dark background color for the features and about sections */
+        #features, #about {
+            background-color: #343a40;
+        }
+
+        /* Light background color for the contact section */
+        #contact {
+            background-color: #ffffff;
+            color: #000000; /* Dark text color for the contact section */
+        }
+
+        footer {
+            width: 100%;
+            height: 60px;
+            line-height: 60px;
+            background-color: #212529; /* Dark background color for the footer */
+        }
+
+        /* Add your custom styles here */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Dark background color for the support message section */
+        #support-message {
+            background-color: #343a40;
+            color: #ffffff; /* Light text color for the support message section */
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        /* Style for the replies section */
+        #replies-section {
+            background-color: #212529; /* Dark background color for the replies section */
+            color: #ffffff; /* Light text color for the replies section */
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        /* Style for each reply block */
+        .reply-block {
+            background-color: #343a40; /* Dark background color for the reply block */
+            color: #ffffff; /* Light text color for the reply block */
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+<!-- Navigation -->
+{{ template "navbar.html" . }}
+
+<!-- Support Message Section -->
+
+
+<section id="support-message">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <h2 class="text-center mb-4">{{.comment.Title}}</h2>
+                <p>{{render .comment.Body}}</p>
+                <!-- Display the time of publication -->
+                <p class="text-muted text-center">{{time .comment.CreatedAt}}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Replies Section -->
+<section id="replies-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <h3 class="text-center mb-4">Replies</h3>
+                {{ range $reply := .comment.RepliesMessages }}
+                <div class="reply-block">
+                    <p>{{render .Body}}</p>
+                    <p class="text-muted">{{time .CreatedAt}}</p>
+                </div>
+                {{end}}
+            </div>
+        </div>
+    </div>
+</section>
+<section id="reply-form-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <h3 class="text-center mb-4">Reply to this Message (WIP, only for admins)</h3>
+                <form action="/reply/{{.comment.URL}}" method="POST">
+                    <div class="form-group">
+                        <label for="userReply">Your Reply:</label>
+                        <textarea class="form-control" id="userReply" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-light btn-block">Submit Reply</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="py-2">
+    <div class="container">
+        <p class="m-0 text-center footer-text">© 2024 PP Ranking. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="/js/peepo.js"></script>
+</body>
+
+</html>

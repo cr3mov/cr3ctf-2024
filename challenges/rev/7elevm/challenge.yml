@@ -1,0 +1,28 @@
+name: "7elevm"
+author: "es3n1n"
+category: rev
+description: |-
+  Since my mother kept bothering me about looking for a job, I decided to finally find one and now I work at 7 eleven. 
+  On my first day, when I arrived at the checkout counter, some weird program was asking me for a bizarre 'flag'.
+  
+  Can you help me with finding this weird flag?
+  
+  Note 1: Used libraries aren't modified in any way, there's no need to analyze them.
+  
+  Note 2: Wrap the result string in `cr3{...}`
+  
+  Usage: `chall rom`
+  
+  **author**: es3n1n
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 50
+  minimum: 50
+flags:
+  - cr3{1Il|Il_il_i_ll11Iiii_|_l1I_l1i|1|_iI|_||i1IIl|I1}
+files:
+  - handout/rev_7elevm.7z
+state: visible
+version: "0.1"

@@ -1,0 +1,24 @@
+[submodule "challenges/block/cr3dao/challenge/project/lib/forge-std"]
+	path = challenges/block/cr3dao/challenge/project/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
+[submodule "challenges/block/cr3dao/challenge/project/lib/forge-ctf"]
+	path = challenges/block/cr3dao/challenge/project/lib/forge-ctf
+	url = https://github.com/es3n1n/forge-ctf
+[submodule "challenges/rev/messed-calc/challenge/vendor/nand_nor"]
+	path = challenges/rev/messed-calc/challenge/vendor/nand_nor
+	url = https://github.com/Deniskore/nand_nor.git
+[submodule "challenges/block/cr3proxy/challenge/project/lib/forge-std"]
+	path = challenges/block/cr3proxy/challenge/project/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
+[submodule "challenges/block/cr3proxy/challenge/project/lib/forge-ctf"]
+	path = challenges/block/cr3proxy/challenge/project/lib/forge-ctf
+	url = https://github.com/es3n1n/forge-ctf
+[submodule "challenges/block/cr3dao-revenge/challenge/project/lib/forge-std"]
+	path = challenges/block/cr3dao-revenge/challenge/project/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
+[submodule "challenges/block/cr3dao-revenge/challenge/project/lib/forge-ctf"]
+	path = challenges/block/cr3dao-revenge/challenge/project/lib/forge-ctf
+	url = https://github.com/es3n1n/forge-ctf
+[submodule "infra/paradigmctf-py"]
+	path = infra/paradigmctf-py
+	url = https://github.com/es3n1n/paradigmctf-py

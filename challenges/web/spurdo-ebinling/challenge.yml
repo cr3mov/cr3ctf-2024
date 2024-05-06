@@ -1,0 +1,25 @@
+name: "spurdo-ebinling"
+author: "es3n1n, cpp.dog"
+category: web
+description: |-
+  Spurdo decided to develop a web game while he was solo leveling.
+  But due to lack of skill, spurdo developed a game that cannot be completed by anyone sane enough.
+  And because of that he decided to invite some beta players(you) for his game.
+  
+  Good luck.
+
+  [https://spurdo-ebinling.1337.sb](https://spurdo-ebinling.1337.sb)
+
+  **author**: es3n1n, cpp.dog
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 50
+  minimum: 50
+flags:
+  - cr3{l3t's_k3ep_0n_gr1nd1n_til1_3bin}
+files:  # (ones that would be given to players)
+  - handout/web_spurdo-leveling.7z
+state: visible
+version: "0.1"

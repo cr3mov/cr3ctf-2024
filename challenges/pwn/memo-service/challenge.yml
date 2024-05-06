@@ -1,0 +1,23 @@
+name: "memo-service"
+author: "Lio"
+category: pwn
+description: |-
+  Our company has just installed a new program that helps employees to remember things rather than use sticky notes.
+
+  `$ nc 1337.sb 40001`
+  
+  flag is at `/flag`
+  
+  **author**: Lio
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 50
+  minimum: 50
+flags:
+  - cr3{b3t4_5t1LL_1n_d3v3l0pm3nt}
+files:  # (ones that would be given to players)
+  - handout/pwn_memo-service.7z
+state: visible
+version: "0.1"

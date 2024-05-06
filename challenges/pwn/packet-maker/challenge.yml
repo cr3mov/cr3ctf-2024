@@ -1,0 +1,24 @@
+name: "packet-maker"
+author: "brwook"
+category: pwn
+description: |-
+  How long are you only going to use packets made by old people?
+  Make any packet you want!
+
+  `$ nc 1337.sb 40004`
+
+  flag is at `/flag.txt`
+
+  **author**: brwook
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 50
+  minimum: 50
+flags:
+  - cr3{U$e_5nPr1n7F_m4KES_0Ff_by_nU11_YOu_4RE_R3aL1y_g0$u!}
+files:
+  - handout/pwn_packet-maker.7z
+state: visible
+version: "0.1"

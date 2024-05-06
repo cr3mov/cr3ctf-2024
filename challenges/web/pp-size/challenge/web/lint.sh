@@ -1,0 +1,3 @@
+#!/bin/bash
+
+gocritic check -enableAll -disable=unnamedResult ./...

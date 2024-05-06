@@ -1,0 +1,21 @@
+name: "web-crypto"
+author: "cpp.dog"
+category: misc
+description: |-
+  Everyone knows W in web stands for crypto, so I made this totally secure secret collection. 
+
+  [https://web-crypto.1337.sb/](https://web-crypto.1337.sb/)
+
+  **author**: cpp.dog
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 50
+  minimum: 50
+flags:
+  - cr3{s0o_uhHh_1_w4nna_s4y_h3l10_t0_my_m0m_s1st3rs_g1rlfr13nd(j0k3_1_d0nt_have_4ny)_d0g_c4t_p3t_c0ckr04ch_and_y0u_th3_p3rs0n_wh0_s0lv3d_th15_ch4l1eng3}
+files:
+  - handout/misc_web-crypto.7z
+state: visible
+version: "0.1"

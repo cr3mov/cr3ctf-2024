@@ -1,0 +1,23 @@
+name: "randomness"
+author: "cocay"
+category: pwn
+description: |-
+  Randomness prevents me from writing the shellcode.
+
+  `$ nc 1337.sb 40005`
+
+  flag is at `/flag.txt`
+  
+  **author**: cocay
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 50
+  minimum: 50
+flags:
+  - cr3{orw_sh3llc0d3_i5_e4sy_8c08e}
+files:
+  - handout/pwn_randomness.7z
+state: visible
+version: "0.1"

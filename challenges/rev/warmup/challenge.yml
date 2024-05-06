@@ -1,0 +1,19 @@
+name: "warmup"
+author: "es3n1n"
+category: rev
+description: |-
+  Let's warm your decompilers and disassemblers up!
+  
+  **author**: es3n1n
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 50
+  minimum: 50
+flags:
+  - cr3{d0nt_trU5t_D3c0mp1L3rs_t0o_muCh}
+files:
+  - handout/rev_warmup.7z
+state: visible
+version: "0.1"

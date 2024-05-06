@@ -1,0 +1,66 @@
+syntax = "proto3";
+
+package spurdo_leveling;
+
+message ItemDetail {
+    optional string name = 1;
+    optional uint32 damage = 2;
+    optional string icon = 3;
+}
+
+message Wave {
+    message Mob {
+        uint32 health = 1;
+        uint32 damage = 2;
+        bool invincible = 3;
+        uint32 xp = 4;
+        optional ItemDetail drop = 5;
+    }
+
+    uint32 number = 1;
+    repeated Mob mobs = 2;
+    double current_time = 3;
+}
+
+message CPing {}
+message SPing {}
+
+message CInventory {}
+message SInventory {
+    message Item {
+        bool equipped = 1;
+        ItemDetail detail = 2;
+    }
+
+    repeated Item items = 1;
+}
+
+message CInventoryEquip {
+    ItemDetail item = 1;
+}
+message SInventoryEquip {
+    bool success = 1;
+}
+
+message CLevelUp {
+    uint32 item = 1;
+}
+message SLevelUp {}
+
+message SAchievementUnlocked {
+    string name = 1;
+}
+
+enum PacketId {
+    PACKET_ID_PING = 0;
+    PACKET_ID_WAVE = 1; // start or end
+    PACKET_ID_INVENTORY = 2;
+    PACKET_ID_INVENTORY_EQUIP = 3;
+    PACKET_ID_LEVEL_UP = 4;
+    PACKET_ID_ACHIEVEMENT_UNLOCKED = 5;
+}
+
+message Packet {
+    PacketId type = 1;
+    optional bytes value = 2;
+}

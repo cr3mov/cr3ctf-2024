@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Search - PP Ranking</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom styles -->
+    <style>
+        body {
+            padding-top: 56px;
+            min-height: 100vh;
+            background-color: #343a40; /* Dark background color */
+            color: #ffffff; /* Light text color */
+        }
+
+        @media (min-width: 992px) {
+            body {
+                padding-top: 72px;
+            }
+        }
+
+        nav, .footer-text {
+            color: #ffffff; /* Light text color for navbar and footer */
+        }
+
+        /* Dark background color for the navbar */
+        nav.navbar {
+            background-color: #212529;
+        }
+
+        /* Dark background color for the header */
+        header {
+            background-color: #343a40;
+        }
+
+        /* Dark background color for the features and about sections */
+        #features, #about {
+            background-color: #343a40;
+        }
+
+        /* Light background color for the contact section */
+        #contact {
+            background-color: #ffffff;
+            color: #000000; /* Dark text color for the contact section */
+        }
+
+        footer {
+            width: 100%;
+            height: 60px;
+            line-height: 60px;
+            background-color: #212529; /* Dark background color for the footer */
+        }
+
+        /* Add your custom styles here */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Style for the search section */
+        #search-section {
+            background-color: #343a40; /* Dark background color for the search section */
+            color: #ffffff; /* Light text color for the search section */
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .message-block {
+            background-color: #343a40; /* Dark background color for the message block */
+            color: #ffffff; /* Light text color for the message block */
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+<!-- Navigation -->
+{{ template "navbar.html" . }}
+
+<!-- Search Section -->
+<section id="search-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h2 class="text-center mb-4">Find a user</h2>
+                <!-- Simple text input for searching users -->
+                <form method="POST" action="/search">
+                    <div class="form-group">
+                        <label for="searchInput">Enter username:</label>
+                        <input type="text" class="form-control" id="searchInput" name="query" placeholder="Username">
+                    </div>
+                    <button type="submit" class="btn btn-light btn-block">Search</button>
+                </form>
+            </div>
+            {{ range $user := .users }}
+            <!-- Example message block -->
+            <div class="message-block">
+                <p>{{ .Username }}</p>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-2">
+    <div class="container">
+        <p class="m-0 text-center footer-text">© 2024 PP Ranking. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="/js/ebin.js"></script>
+</body>
+
+</html>

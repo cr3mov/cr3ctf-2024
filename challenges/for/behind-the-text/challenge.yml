@@ -1,0 +1,19 @@
+name: "behind-the-text"
+author: "dxq, Cherry"
+category: forensics
+description: |-
+  I made my first font, would you take a look at it?
+
+   **author**: dxq, Cherry
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 50
+  minimum: 50
+flags:
+  - "cr3{h1_fr0m_my_f0nt}"
+files:
+  - handout/for_behind-the-text.7z
+state: visible
+version: "0.1"

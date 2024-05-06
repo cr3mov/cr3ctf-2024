@@ -1,0 +1,17 @@
+name: "spurdo-treasures"
+author: "ATSTNG, es3n1n, cpp.dog"
+category: ppc
+description: |-
+  Check it out on our [platform](https://ppc.1337.sb/)
+  
+  **author**: ATSTNG, es3n1n, cpp.dog
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 50
+  minimum: 50
+flags:
+  - cr3{w3lc0m3_t0_th3_spurd0_mult1v3rs3}
+state: visible
+version: "0.1"

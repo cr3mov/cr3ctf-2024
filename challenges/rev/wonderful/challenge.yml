@@ -1,0 +1,21 @@
+name: "wonderful"
+author: "es3n1n"
+category: rev
+description: |-
+  Please don't be scared; I promise there is a straightforward and pretty interesting way to solve this challenge.
+  
+  Good luck :^)
+  
+  **author**: es3n1n
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 50
+  minimum: 50
+flags:
+  - cr3{0hw0www_YoU_4re_Th3_real_d34L!Ih0p3_y0u_werent_sc4red!!!!!!_hhmmpfrdkfegtsniczjyew6s3jiugm7mdev}
+files:
+  - handout/rev_wonderful.7z
+state: visible
+version: "0.1"

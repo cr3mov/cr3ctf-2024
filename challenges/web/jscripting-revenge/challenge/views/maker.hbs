@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script Maker</title>
+    <style>
+        body {
+            font-family: 'Source Code Pro', monospace;
+            margin: 0 auto;
+            padding: 0 auto;
+            overflow: hidden;
+        }
+
+        .container {
+            min-height: 100vh;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #090B10;
+            color: #FFFFFF;
+        }
+
+        .editor-header {
+            color: #4B526D;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .editor-container {
+            width: 80%;
+            background-color: #0F111A;
+            border: 1px solid #8F93A2;
+            display: flex;
+            margin: 20px;
+        }
+
+        .line-numbers {
+            color: #4B526D;
+            background-color: #0F111A;
+            padding: 10px;
+            text-align: right;
+        }
+
+        textarea {
+            background-color: #0F111A;
+            color: #EEFFFF;
+            border: none;
+            outline: none;
+            resize: none;
+            width: 100%;
+            padding: 10px;
+            line-height: 1.5;
+            font-family: 'Source Code Pro', monospace;
+            overflow: hidden;
+        }
+
+        .execute-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #FFFFFF;
+            background-color: #191A21;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .execute-button:hover {
+            background-color: #1A1C25;
+        }
+
+        .form-container {
+            text-align: center;
+            width: 80%;
+        }
+
+        .output-container {
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+        }
+
+        .output-area {
+            border: 1px solid rgba(143, 147, 162, 0.5);
+            width: 100%;
+            min-height: 5vh;
+            padding: 0 20px;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="editor-header">Script Maker</div>
+
+        <div class="editor-container">
+            <div class="line-numbers">
+                <!-- TODO: make dynamic lines numbering -->
+                1<br>2<br>3<br>4<br>5
+            </div>
+
+            <textarea id="codeArea" style="line-height: 1.38;" cols="50" rows="5" wrap="hard" maxlength="1000"
+                placeholder="7yp3 y07R 4W350m3 3xql01t5 h3r3!"></textarea>
+        </div>
+
+        <div class="form-container">
+            <button type="button" class="execute-button" onclick="submitCode()">Execute!</button>
+        </div>
+
+        <div class="output-container">
+            <div class="editor-header">Output</div>
+            <div class="output-area">
+                <span style="word-wrap: break-word;" id="execute-output"></span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        async function submitCode() {
+            const code = document.getElementById('codeArea').value;
+
+            if (!code)
+                return alert('Code is empty!');
+
+            const response = await fetch('/api/execute', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ script: code }),
+            });
+
+            if (!response.ok)
+                alert('something went wrong!');
+
+            const result = await response.text();
+
+            return applyResult(result);
+        };
+
+        function applyResult(result = "") {
+            const executeOutput = document.getElementById('execute-output');
+
+            if (!executeOutput)
+                return;
+
+            executeOutput.textContent = result;
+        };
+    </script>
+</body>
+
+</html>

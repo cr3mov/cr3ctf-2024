@@ -1,0 +1,5 @@
+__pycache__/**
+*.pyc
+.idea/**
+messages/protoc.exe
+.mypy_cache/**

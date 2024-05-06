@@ -1,0 +1,17 @@
+name: "spurdo-llc"
+author: "ATSTNG, es3n1n, cpp.dog"
+category: ppc
+description: |-
+  Check it out on our [platform](https://ppc.1337.sb/)
+  
+  **author**: ATSTNG, es3n1n, cpp.dog
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 50
+  minimum: 50
+flags:
+  - cr3{n0w_spurd0_h4s_3n0ugh_m0n3y_f0r_eb1n}
+state: visible
+version: "0.1"

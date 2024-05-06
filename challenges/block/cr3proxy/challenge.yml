@@ -1,0 +1,22 @@
+name: "cr3proxy"
+author: "CarpeDiem"
+category: misc
+description: |-
+  Just a rare proxy
+
+  `$ nc 1337.sb 10001`
+
+   **author**: CarpeDiem
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 50
+  minimum: 50
+flags:
+  - "cr3{UnS4F3_D3Leg4t3CaLl_0n_Pr0xY_AdDr3Ss}"
+files:
+  - handout/block_Cr3Proxy.7z
+state: visible
+version: "0.1"
+

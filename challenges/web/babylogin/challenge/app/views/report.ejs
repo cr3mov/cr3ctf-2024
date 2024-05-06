@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empty</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
+    <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+  </head>
+  <body>
+    <div class="container mt-3 rounded border-info border-top border-bottom bg-light w-50">
+      <div class="row text-center">
+          <div class="col mt-1">
+              <h3>baby login</h3>
+          </div>
+      </div>
+      <div class="row mx-auto">
+          <div class="col h-100 d-flex align-items-center justify-content-center p-4">
+            <form action="/report" method="GET" id="report">
+                  <div class="mb-3">
+                      <label class="form-label">Please report issues here</label>
+                      <input name="url" type="text" class="form-control" required>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Report</button>
+                  <div class="h-captcha" data-sitekey="a87d4830-f255-412b-adcc-1aa7a03f627a"></div><br />
+                  <p id="result">
+                    <%= result %>
+                  </p>
+              </form>
+          </div>
+          
+      </div>
+  </div>
+  </body>
+</html>

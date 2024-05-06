@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Dashboard - PP Ranking</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom styles -->
+    <style>
+        body {
+            padding-top: 56px;
+            min-height: 100vh;
+            background-color: #343a40; /* Dark background color */
+            color: #ffffff; /* Light text color */
+            padding-bottom: 60px;
+        }
+
+        @media (min-width: 992px) {
+            body {
+                padding-top: 72px;
+            }
+        }
+
+        nav, .footer-text {
+            color: #ffffff; /* Light text color for navbar and footer */
+        }
+
+        /* Dark background color for the navbar */
+        nav.navbar {
+            background-color: #212529;
+        }
+
+        /* Dark background color for the header */
+        header {
+            background-color: #343a40;
+        }
+
+        form {
+            margin: 10px;
+        }
+
+        /* Dark background color for the features and about sections */
+        #features, #about {
+            background-color: #343a40;
+        }
+
+        /* Light background color for the contact section */
+        #contact {
+            background-color: #ffffff;
+            color: #000000; /* Dark text color for the contact section */
+        }
+
+        footer {
+            width: 100%;
+            height: 60px;
+            line-height: 60px;
+            background-color: #212529; /* Dark background color for the footer */
+        }
+
+        /* Add your custom styles here */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Dark background color for the dashboard section */
+        #dashboard {
+            background-color: #343a40;
+            color: #ffffff; /* Light text color for the dashboard section */
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        /* Style for the support section */
+        #support-section {
+            background-color: #212529; /* Dark background color for the support section */
+            color: #ffffff; /* Light text color for the support section */
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        /* Style for the message blocks */
+        .message-block {
+            background-color: #343a40; /* Dark background color for the message block */
+            color: #ffffff; /* Light text color for the message block */
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+<!-- Navigation -->
+{{ template "navbar.html" . }}
+
+<!-- Dashboard Section -->
+<section id="dashboard">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h2 class="text-center mb-4">Welcome to your Dashboard</h2>
+                <!-- Display username and pp score dynamically -->
+                <p class="text-center">Username: {{.user.Username}}</p>
+                <p class="text-center">PP Score: {{.user.PPLength}}</p>
+                <!-- Display a congratulatory message with the flag -->
+                {{ if ge .user.PPLength 1338 }}
+                <div class="text-center">
+                    <p>Congratulations! Your PP length reached superhuman limits.</p>
+                    <p>Here's your flag: {{.flag}}</p>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Support Section -->
+<section id="support-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h2 class="text-center mb-4">Support Section</h2>
+                <!-- Add a form or textarea for comments/messages -->
+                <form method="POST" action="/comment">
+                    <div class="form-group">
+                        <label for="userComment">Leave your comment or message:</label>
+                        <textarea class="form-control" id="userComment" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-light btn-block h-captcha" data-sitekey="{{.captcha}}" data-callback="postComment">Submit</button>
+                </form>
+                {{ range $comment := .messages }}
+                    <!-- Example message block -->
+                    <div class="message-block" onclick="window.location.href='/comment/{{ .URL }}'">
+                        <p>{{ .Title }} -- Replies: {{length .RepliesMessages}}</p>
+                    </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-2">
+    <div class="container">
+        <p class="m-0 text-center footer-text">© 2024 PP Ranking. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+{{ if .use_captcha }}
+<script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+{{ end }}
+<script src="/js/peepo.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+name: "spurdo-ai"
+author: "es3n1n"
+category: misc
+description: |-
+  Spurdo LLC CEO has decided that they need to hire assistants, but instead of hiring people for this job, 
+  they decided to train an LLM for that. CEO actually knew the flag for this challenge and told it to their assistant,
+  maybe this assistant could help you with getting the flag.
+
+  `$ nc 1337.sb 20002`
+
+  **author**: es3n1n
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 50
+  minimum: 50
+flags:
+  - {
+    type: "regex",
+    content: "cr3{d[i1]d[-_ ]y[0o]u[-_ ]l[i1]k[3e][-_ ][i1]t}",
+    data: "case_insensitive",
+  }
+state: visible
+version: "0.1"

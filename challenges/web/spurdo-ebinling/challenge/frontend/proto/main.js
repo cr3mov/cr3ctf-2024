@@ -1,0 +1,1 @@
+document.protobuf = require('./protocol_pb.js');

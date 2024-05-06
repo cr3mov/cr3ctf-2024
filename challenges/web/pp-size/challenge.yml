@@ -1,0 +1,22 @@
+name: "pp-size"
+author: "cpp.dog"
+category: web
+description: |-
+  Let's measure each other's PP and conquer the ultimate PP size championship. 
+  Reach at least 1337.1 centimeters in PP length to get the flag. 
+  
+  Note: Initial PP size is random and cannot exceed 20.
+
+  [https://pp-size.1337.sb](https://pp-size.1337.sb)
+
+  **author**: cpp.dog
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 50
+  minimum: 50
+flags:
+  - cr3{th3_ult1m4t3_p3e_pe3}
+state: visible
+version: "0.1"

@@ -1,0 +1,19 @@
+name: "getting-closer-dang"
+author: "r4sti"
+category: crypto
+description: |-
+  What is the correct one? Old but Gold, or Gold but Old?
+
+  **Author**: r4sti
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 50
+  minimum: 50
+flags:
+  - cr3{___GCD_tr1cks_n3v3r_g3t_0ld___!}
+files:  # (ones that would be given to players)
+  - handout/crypto_getting-closer-damn.7z
+state: visible
+version: "0.1"

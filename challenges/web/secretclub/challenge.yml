@@ -1,0 +1,22 @@
+name: "secretclub"
+author: "es3n1n, anger"
+category: web
+description: |-
+  I think that youtube video taught me the wrong way to roll my own authentication...
+  
+  [https://secretclub.1337.sb](https://secretclub.1337.sb)
+  `$ nc 1337.sb 50000`
+  
+  **author**: es3n1n, anger
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 50
+  minimum: 50
+flags:
+  - cr3{4lw4ys_r3ad_th3_d0cs}
+files:
+  - handout/web_secretclub.7z
+state: visible
+version: "0.1"

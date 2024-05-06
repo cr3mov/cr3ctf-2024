@@ -1,0 +1,22 @@
+name: "mov-cr3"
+author: "brwook"
+category: pwn
+description: |-
+  I want to steal the message my friend cocay has.
+  Can u help me with that?
+
+  `$ nc 1337.sb 40002`
+
+  **author**: brwook
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 50
+  minimum: 50
+flags:
+  - cr3{N0W_y0U_kN0w_Wh47_cr3_r39i573r5_D0}
+files:
+  - handout/pwn_mov-cr3.7z
+state: visible
+version: "0.1"

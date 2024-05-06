@@ -1,0 +1,20 @@
+name: "LCGO"
+author: "merabier"
+category: crypto
+description: |-
+  LLLLLLLLLCGOOOOOOOOOOO
+
+   **author**: merabier
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 50
+  minimum: 50
+flags:
+  - "cr3{LFG_b4byyy_LLLCGO}"
+files:
+  - handout/crypto_LCGo.7z
+state: visible
+version: "0.1"
+

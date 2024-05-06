@@ -1,0 +1,3 @@
+
+class DropConnectionException(Exception):
+    pass

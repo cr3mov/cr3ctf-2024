@@ -1,0 +1,21 @@
+[cmake]
+version = "3.15"
+cmkr-include = "cmake/cmkr.cmake"
+
+[project]
+name = "barcode-rev"
+languages = ["CXX"]
+msvc-runtime = "static"
+
+[variables]
+BUILD_SHARED_LIBS = true
+
+[target.chall]
+compile-definitions = ["NOMINMAX", "STB_IMAGE_IMPLEMENTATION"]
+compile-features = ["cxx_std_23"]
+include-directories = ["src/", "src/zxing/"]
+sources = ["src/**.cpp", "src/**.hpp"]
+type = "executable"
+unix.compile-options = ["-stdlib=libc++", "-fPIC"]
+unix.link-options = ["-lc++", "-fuse-ld=lld", "-Wl,--strip-debug", "-s"]
+msvc.compile-options = ["/MP"]

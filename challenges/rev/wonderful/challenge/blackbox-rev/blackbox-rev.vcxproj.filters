@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="themida\SecureEngineCustomVM_BorlandC_inline_CAT_BLACK.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="themida\SecureEngineCustomVM_BorlandC_inline_CAT_RED.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="themida\SecureEngineCustomVM_BorlandC_inline_CAT_WHITE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="themida\SecureEngineCustomVM_BorlandC_inline_FISH_EXTREME.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="themida\SecureEngineCustomVM_BorlandC_inline_FISH_LITE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="themida\SecureEngineCustomVM_BorlandC_inline_FISH_LONDON.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="themida\SecureEngineCustomVM_BorlandC_inline_TIGER_EXTREME.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="themida\SecureEngineCustomVM_BorlandC_inline_TIGER_LITE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="themida\SecureEngineCustomVM_BorlandC_inline_TIGER_LONDON.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="themida\SecureEngineCustomVM_CAT_BLACK.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="themida\SecureEngineCustomVM_CAT_RED.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="themida\SecureEngineCustomVM_CAT_WHITE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="themida\SecureEngineCustomVM_FISH_EXTREME.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="themida\SecureEngineCustomVM_FISH_LITE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="themida\SecureEngineCustomVM_FISH_LONDON.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="themida\SecureEngineCustomVM_GNU_inline_CAT_BLACK.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="themida\SecureEngineCustomVM_GNU_inline_CAT_RED.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="themida\SecureEngineCustomVM_GNU_inline_CAT_WHITE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="themida\SecureEngineCustomVM_GNU_inline_FISH_EXTREME.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="themida\SecureEngineCustomVM_GNU_inline_FISH_LITE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="themida\SecureEngineCustomVM_GNU_inline_FISH_LONDON.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="themida\SecureEngineCustomVM_GNU_inline_TIGER_EXTREME.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="themida\SecureEngineCustomVM_GNU_inline_TIGER_LITE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="themida\SecureEngineCustomVM_GNU_inline_TIGER_LONDON.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="themida\SecureEngineCustomVM_ICL_inline_CAT_BLACK.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="themida\SecureEngineCustomVM_ICL_inline_CAT_RED.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="themida\SecureEngineCustomVM_ICL_inline_CAT_WHITE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="themida\SecureEngineCustomVM_ICL_inline_FISH_EXTREME.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="themida\SecureEngineCustomVM_ICL_inline_FISH_LITE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="themida\SecureEngineCustomVM_ICL_inline_FISH_LONDON.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="themida\SecureEngineCustomVM_ICL_inline_TIGER_EXTREME.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="themida\SecureEngineCustomVM_ICL_inline_TIGER_LITE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="themida\SecureEngineCustomVM_ICL_inline_TIGER_LONDON.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="themida\SecureEngineCustomVM_LCC_inline_CAT_BLACK.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="themida\SecureEngineCustomVM_LCC_inline_CAT_RED.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="themida\SecureEngineCustomVM_LCC_inline_CAT_WHITE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="themida\SecureEngineCustomVM_LCC_inline_FISH_EXTREME.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="themida\SecureEngineCustomVM_LCC_inline_FISH_LITE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="themida\SecureEngineCustomVM_LCC_inline_FISH_LONDON.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="themida\SecureEngineCustomVM_LCC_inline_TIGER_EXTREME.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="themida\SecureEngineCustomVM_LCC_inline_TIGER_LITE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="themida\SecureEngineCustomVM_LCC_inline_TIGER_LONDON.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="themida\SecureEngineCustomVM_TIGER_EXTREME.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="themida\SecureEngineCustomVM_TIGER_LITE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="themida\SecureEngineCustomVM_TIGER_LONDON.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="themida\SecureEngineCustomVM_VC_inline_CAT_BLACK.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="themida\SecureEngineCustomVM_VC_inline_CAT_RED.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="themida\SecureEngineCustomVM_VC_inline_CAT_WHITE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="themida\SecureEngineCustomVM_VC_inline_FISH_EXTREME.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="themida\SecureEngineCustomVM_VC_inline_FISH_LITE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="themida\SecureEngineCustomVM_VC_inline_FISH_LONDON.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="themida\SecureEngineCustomVM_VC_inline_TIGER_EXTREME.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="themida\SecureEngineCustomVM_VC_inline_TIGER_LITE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="themida\SecureEngineCustomVM_VC_inline_TIGER_LONDON.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="themida\SecureEngineCustomVMs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="themida\SecureEngineCustomVMs_BorlandC_inline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="themida\SecureEngineCustomVMs_GNU_inline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="themida\SecureEngineCustomVMs_ICL_inline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="themida\SecureEngineCustomVMs_LCC_inline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="themida\SecureEngineCustomVMs_VC_inline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="themida\ThemidaSDK.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="themida\SecureEngineSDK64.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".clang-format" />
+  </ItemGroup>
+</Project>

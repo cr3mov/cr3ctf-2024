@@ -1,0 +1,23 @@
+name: "picklestar"
+author: "j3seer, es3n1n"
+category: misc
+description: |-
+  i love pickles! gimme some ^-^
+
+  `$ nc 1337.sb 20001`
+
+  flag is at `/flag`
+  
+  **author**: j3seer, es3n1n
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 50
+  minimum: 50
+flags:
+  - cr3{pickle_pickle_little_payload?}
+files:  # (ones that would be given to players)
+  - handout/misc_picklestar.7z
+state: visible
+version: "0.1"

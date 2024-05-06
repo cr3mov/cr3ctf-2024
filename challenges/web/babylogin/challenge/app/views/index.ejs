@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empty</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container mt-3 rounded border-info border-top border-bottom bg-light w-50">
+      <div class="row text-center">
+          <div class="col mt-1">
+              <h3>baby login</h3>
+          </div>
+      </div>
+      <div class="row mx-auto">
+          <div class="col h-100 d-flex align-items-center justify-content-center p-4">
+            <form action="/" method="POST">
+                  <div class="mb-3">
+                      <label class="form-label">Username</label>
+                      <input name="username" type="text" class="form-control" required>
+                      <label class="form-label">Password</label>
+                      <input name="password" type="Password" class="form-control" required>
+                  </div>
+
+                  <button type="submit" class="btn btn-primary">Login</button>
+                  <p id="result">
+                    <%= result %>
+                  </p>
+              </form>
+          </div>
+      </div>
+  </div>
+  </body>
+</html>

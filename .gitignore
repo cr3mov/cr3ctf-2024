@@ -1,0 +1,7 @@
+**/cmake-*/*
+**/.idea/**
+**/.vs/**
+**/.vscode/**
+**/__pycache__/**
+**/node_modules/**
+.ctf/**

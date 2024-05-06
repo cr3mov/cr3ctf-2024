@@ -1,0 +1,19 @@
+[cmake]
+version = "3.15"
+cmkr-include = "cmake/cmkr.cmake"
+
+[project]
+name = "chall"
+languages = ["CXX"]
+msvc-runtime = "static"
+
+[target.chall]
+type = "executable"
+compile-features = ["cxx_std_23"]
+compile-definitions = ["NOMINMAX"]
+sources = ["src/**.cpp"]
+include-directories = ["src/"]
+unix.compile-options = ["-stdlib=libc++"]
+unix.link-options = ["-lc++", "-lc++abi", "-fuse-ld=lld"]
+msvc.compile-options = ["/MP"]
+clang.compile-options = ["-mno-sse"]

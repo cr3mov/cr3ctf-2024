@@ -1,0 +1,21 @@
+name: "guessing-revenge"
+author: "kibastian"
+category: crypto
+description: |-
+  I am very disappointed, please try this one :sob:
+  
+  `$ nc 1337.sb 20004`
+
+  **Author**: kibastian, es3n1n
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 50
+  minimum: 50
+flags:
+  - cr3{sorry_f0r_th3_br0k3n_ch4ll_n0w_w1th_n0_bugs_:sob:!}
+files:  # (ones that would be given to players)
+  - handout/crypto_guessing-revenge.7z
+state: visible
+version: "0.1"

@@ -1,0 +1,21 @@
+name: "guessing"
+author: "kibastian"
+category: crypto
+description: |-
+  You send a matrix, then you get a new one. As simple as that.
+
+  `$ nc 1337.sb 20000`
+
+  **Author**: kibastian, es3n1n
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 50
+  minimum: 50
+flags:
+  - cr3{1_h0p3_y0u_w3rent_tRy1nG_t0_f1ND_c0MmUt1ng_m4tr1x!}
+files:  # (ones that would be given to players)
+  - handout/crypto_guessing.7z
+state: visible
+version: "0.1"

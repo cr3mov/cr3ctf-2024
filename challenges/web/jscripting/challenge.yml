@@ -1,0 +1,22 @@
+name: "jscripting"
+author: "dxqwww, Cherry"
+category: web
+description: |-
+  We have created a simple "Script Maker" where you can write and execute your own code.
+  We also hope that you're good at scripting... so we're welcome to any bug reports!
+  
+  [https://jscripting.1337.sb](https://jscripting.1337.sb)
+  
+  **author**: dxq, Cherry
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 50
+  minimum: 50
+flags:
+  - cr3{W0vv53Rs_1n5q3c70R_G4dg3T!!1}
+files:
+  - handout/web_jscripting.7z
+state: visible
+version: "0.1"

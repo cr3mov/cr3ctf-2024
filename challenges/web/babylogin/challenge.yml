@@ -1,0 +1,22 @@
+name: "babylogin"
+author: "j3seer"
+category: web
+description: |-
+  i still dont get it, who needs a db?
+  flag format: cr3{a-zA-Z0-9_}
+  
+  [https://babylogin.1337.sb](https://babylogin.1337.sb)
+
+  **author**: j3seer
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 50
+  minimum: 50
+flags:
+  - cr3{c0okiepars3r_ftw_hehe}
+files:
+  - handout/web_babylogin.7z
+state: visible
+version: "0.1"

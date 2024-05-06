@@ -1,0 +1,25 @@
+name: "mba-boy"
+author: "es3n1n"
+category: rev
+description: |-
+  Bought myself a gameboy off the revenue from my job at 7 eleven, to my surprise it started to ask me for some flag too??
+  
+  Tested using [BGB](https://bgb.bircd.org/).
+  
+  **author**: es3n1n
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 50
+  minimum: 50
+flags:
+  - {
+    type: "static",
+    content: "cr3{cu4k-2d7ny}",
+    data: "case_insensitive",
+  }
+files:
+  - handout/rev_mbaboy.7z
+state: visible
+version: "0.1"

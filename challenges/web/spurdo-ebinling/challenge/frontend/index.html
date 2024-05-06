@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spurdo leveling</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+<video id="video__player" autoplay loop muted width="400" height="400" style="position: fixed;z-index:-99999;">
+    <source type="video/mp4" src="./spurdo.mp4">
+</video>
+<video id="video__enemy" autoplay loop muted width="400" height="400" style="position: fixed;z-index:-99999;">
+    <source type="video/mp4" src="./enemy.mp4">
+</video>
+<video id="video__bullet" autoplay loop muted width="400" height="400" style="position: fixed;z-index:-99999;">
+    <source type="video/mp4" src="./bullet.mp4">
+</video>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="./proto/bundle.js"></script>
+<script src="./globals.js"></script>
+<script src="./websockets.js"></script>
+<script src="./player.js"></script>
+<script src="./enemy.js"></script>
+<script src="./bullets.js"></script>
+<script src="./items.js"></script>
+<script src="./globals2.js"></script>
+<script src="./game.js"></script>
+<script>
+    Game.reset();
+    // Start rendering the scene
+    Game.render();
+</script>
+</body>
+</html>

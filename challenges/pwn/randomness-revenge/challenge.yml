@@ -1,0 +1,23 @@
+name: "randomness-revenge"
+author: "brwook,cocay"
+category: pwn
+description: |-
+  brwook says he doesn't need the offset.
+
+  `$ nc 1337.sb 40006`
+
+  flag is at `/flag.txt`
+  
+  **author**: brwook, cocay
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 50
+  minimum: 50
+flags:
+  - cr3{brwook_g0_brrrRRRR_34af3}
+files:
+  - handout/pwn_randomness-revenge.7z
+state: visible
+version: "0.1"

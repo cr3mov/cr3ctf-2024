@@ -1,0 +1,19 @@
+name: "embedding"
+author: "Onirique"
+category: crypto
+description: |-
+  This encoder seems strange, any idea how to break it?
+
+  **author**: Onirique, Duha
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 50
+  minimum: 50
+flags:
+  - cr3{L1l_15_4ll_y0u_n33d_t0_br34k_th3_3nc0d3r!!}
+files:
+  - handout/crypto_embedding.7z
+state: visible
+version: "0.1"

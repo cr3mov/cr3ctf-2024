@@ -1,0 +1,17 @@
+name: "spurdanity-check"
+author: "ATSTNG, es3n1n, cpp.dog"
+category: ppc
+description: |-
+  Check it out on our [platform](https://ppc.1337.sb/)
+  
+  **author**: ATSTNG, es3n1n, cpp.dog
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 50
+  minimum: 1
+flags:
+  - cr3{0h_h3ll0_th3r3_i_hOp3_You_w11L_3NjoY_0uR_pPc_ch4LL5:^)}
+state: visible
+version: "0.1"

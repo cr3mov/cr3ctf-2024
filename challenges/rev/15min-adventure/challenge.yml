@@ -1,0 +1,21 @@
+name: "15min-adventure"
+author: "es3n1n"
+category: rev
+description: |-
+  Let's go, in and out. 15 minute adventure.
+  
+  Tested only on a clean installation of Windows. There could be some issues with wine and others, please use a VM.
+  
+  **author**: es3n1n
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 50
+  minimum: 50
+flags:
+  - cr3{t0ld_y0u_th4t_1t_w0uld_t4k3_15m1n}
+files:
+  - handout/rev_15min-adventure.7z
+state: visible
+version: "0.1"

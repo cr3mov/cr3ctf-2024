@@ -1,0 +1,17 @@
+name: "sanitycheck"
+author: "cr3.mov"
+category: misc
+description: |-
+  come join our discord server and find a flag there
+  
+  [https://discord.gg/hhh4Bk2CvX](https://discord.gg/hhh4Bk2CvX)
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 50
+  minimum: 1
+flags:
+  - cr3{1ns4n1ty_ch3ck!}
+state: visible
+version: "0.1"

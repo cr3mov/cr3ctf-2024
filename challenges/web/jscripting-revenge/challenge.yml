@@ -1,0 +1,24 @@
+name: "jscripting-revenge"
+author: "dxqwww, Cherry"
+category: web
+description: |-
+  Thank you for your bug reports, we have made a in-depth security fix, enjoy using our service!
+
+  NOTE:
+  Tested only on Node.js 20.9.0 64-bit, so, consider using this version when running locally.
+  
+  [https://jscripting-revenge.1337.sb](https://jscripting-revenge.1337.sb)
+  
+  **author**: dxq, Cherry
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 50
+  minimum: 50
+flags:
+  - cr3{1N_D3P7H_0F_J5_4ND_J5C}
+files:
+  - handout/web_jscripting-revenge.7z
+state: visible
+version: "0.1"

@@ -1,0 +1,19 @@
+name: "donut"
+author: "dxq"
+category: forensics
+description: |-
+  Do you want some donuts? I have one for you :)
+
+   **author**: dxq
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 50
+  minimum: 50
+flags:
+  - "cr3{w3_4r3_411_10v3_d0n7T5!1}"
+files:
+  - handout/for_donut.7z
+state: visible
+version: "0.1"

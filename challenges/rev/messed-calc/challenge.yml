@@ -1,0 +1,19 @@
+name: "messed-calc"
+author: "es3n1n"
+category: rev
+description: |-
+  I was solving some ACM challenges today and at some point, I noticed that my solution takes hours to calculate, can you please help me with optimizing it?
+  
+  **author**: es3n1n
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 50
+  minimum: 50
+flags:
+  - cr3{w4it_4r_1t!}
+files:
+  - handout/rev_messed-calc.7z
+state: visible
+version: "0.1"
